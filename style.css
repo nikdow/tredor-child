@@ -1,0 +1,36 @@
+/*
+ Theme Name:   Unite Child
+ Theme URI:    http://windows.cbdweb.net/tredor/unite-child
+ Description:  Unite Child Theme
+ Author:       CBDWeb
+ Author URI:   http://www.cbdweb.net
+ Template:     unite
+ Version:      1.0.0
+ Tags:         
+ Text Domain:  unite
+*/
+
+.stockists td {
+	padding-right: 20px;
+}
+
+#gallery-1 img {
+	border: none !important;
+}
+
+ul#menu-side-menu {
+        margin-top: 20px;
+	list-style: none;
+}
+
+ul#menu-side-menu li {
+	padding-bottom: 5px;
+}
+
+a {
+	color: #34195E;
+}
+
+.navbar-default .navbar-nav > li > a.woomenucart-menu-item {
+	display: none;
+}
