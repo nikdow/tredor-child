@@ -62,5 +62,11 @@ function woo_display_custom_fields ( ) {
 <?php
     }
 }
-
-
+/*
+ * remove theme sales pitch
+ * see function unite_footer_links in theme extras.php
+ */
+function clean_footer() {
+    remove_action( 'unite_footer', 'unite_footer_info', 30 ); 
+}
+add_action('loop_end', 'clean_footer', 1);
