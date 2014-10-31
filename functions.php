@@ -21,7 +21,7 @@ function woo_add_custom_general_fields() {
                 'label'       => __( 'Wayfair link', 'woocommerce' ), 
                 'placeholder' => 'enter Wayfair link',
                 'desc_tip'    => 'true',
-                'description' => __( 'Enter link to Wayfair page.', 'woocommerce' ) 
+                'description' => __( 'Enter link to Wayfair page, including http:// at the start.', 'woocommerce' ) 
         )
     );
   
