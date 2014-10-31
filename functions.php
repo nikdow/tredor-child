@@ -35,3 +35,21 @@ function woo_add_custom_general_fields_save( $post_id ){
 	if( !empty( $woocommerce_text_field ) )
 		update_post_meta( $post_id, '_wayfair_link', esc_attr( $woocommerce_text_field ) );
 }
+
+add_action('woocommerce_product_meta_end', 'woo_display_custom_fields' );
+
+function woo_display_custom_fields ( ) {
+    
+    global $post, $product;
+    
+    $post_id = $product->id;
+    
+    $wayfair_link = get_post_meta($post_id, '_wayfair_link', true );
+    ?>
+    <div class="product_meta">
+        <a href="<?=$wayfair_link?>" target="_blank">Buy online at Wayfair</a>
+    </div>
+<?php
+}
+?>
+
