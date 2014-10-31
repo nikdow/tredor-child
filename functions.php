@@ -45,11 +45,14 @@ function woo_display_custom_fields ( ) {
     $post_id = $product->id;
     
     $wayfair_link = get_post_meta($post_id, '_wayfair_link', true );
-    ?>
-    <div class="product_meta">
-        <a href="<?=$wayfair_link?>" target="_blank">Buy online at Wayfair</a>
-    </div>
+    
+    if( $wayfair_link ) {
+        ?>
+        <div class="product_meta">
+            <a href="<?=$wayfair_link?>" target="_blank">Buy online at Wayfair</a>
+        </div>
 <?php
+    }
 }
-?>
+
 
