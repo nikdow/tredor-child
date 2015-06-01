@@ -34,6 +34,12 @@ a {
 .navbar-default .navbar-nav > li > a.woomenucart-menu-item {
 	display: none;
 }
+.navbar.navbar-default {
+    background-color: #b84612;
+}
+#colophon {
+    background-color: #b84612;
+}
 /* =Slider - adjust colour
 ----------------------------------------------- */
 .carousel-caption h4 {
