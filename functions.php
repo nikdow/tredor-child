@@ -26,10 +26,10 @@ function woo_add_custom_general_fields() {
     woocommerce_wp_text_input( 
         array( 
                 'id'          => '_wayfair_link', 
-                'label'       => __( 'Wayfair link', 'woocommerce' ), 
-                'placeholder' => 'enter Wayfair link',
+                'label'       => __( 'Zizo link', 'woocommerce' ), 
+                'placeholder' => 'enter Zizo link',
                 'desc_tip'    => 'true',
-                'description' => __( 'Enter link to Wayfair page, including http:// at the start.', 'woocommerce' ) 
+                'description' => __( 'Enter link to Zizo page, including http:// at the start.', 'woocommerce' ) 
         )
     );
   
@@ -57,7 +57,7 @@ function woo_display_custom_fields ( ) {
     if( $wayfair_link ) {
         ?>
         <div class="product_meta">
-            <a href="<?=$wayfair_link?>" target="_blank">Buy online at Wayfair</a>
+            <a href="<?=$wayfair_link?>" target="_blank">Buy online at Zizo</a>
         </div>
 <?php
     }
